@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: itemservice
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/nacos?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  type-aliases-package: com.zhuang.item.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+logging:
+  level:
+    com.zhuang: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
