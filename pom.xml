@@ -12,6 +12,7 @@
         <module>account-service</module>
         <module>order-service</module>
         <module>redis-demo</module>
+        <module>mq-advanced-demo</module>
     </modules>
     <packaging>pom</packaging>
 
